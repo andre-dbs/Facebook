@@ -17,3 +17,6 @@ Add ```bash <link rel="stylesheet" href="{f:uri.resource(path: 'Styles/Facebook.
 Add Plugin "Facebook". Generate app-ID, app-Secret and token and put these values in the inspector.
 
 Customize template and css if needed.
+
+# Screenshots
+![Screenshot](/Documentation/screenshot.png?raw=true "Screenshot")
