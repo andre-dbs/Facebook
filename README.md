@@ -14,5 +14,6 @@ php composer.phar require "itoop/facebook" "dev-master"
 Add ```bash <link rel="stylesheet" href="{f:uri.resource(path: 'Styles/Facebook.css', package:'Itoop.Facebook')}" media="all" /> ``` to the stylesheets-section of your page template.
 
 # Usage
-Generate app-ID, app-Secret and token and put these values in the inspector.
-Customize template and css.
+Add Plugin "Facebook". Generate app-ID, app-Secret and token and put these values in the inspector.
+
+Customize template and css if needed.
