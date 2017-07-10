@@ -11,7 +11,7 @@ php composer.phar require facebook/graph-sdk
 php composer.phar require "itoop/facebook" "dev-master"
 ```
 # Usage
-Add Plugin "Facebook". Generate app-ID, app-Secret and token and put these values in the inspector.
+Add Plugin "Facebook". Generate app-ID, app-Secret and token and put these values into the inspector.
 
 # Screenshot
 ![Screenshot](/Documentation/Example.png?raw=true "Screenshot")
