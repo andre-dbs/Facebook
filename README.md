@@ -15,5 +15,4 @@ Add ```bash <link rel="stylesheet" href="{f:uri.resource(path: 'Styles/Facebook.
 
 # Usage
 Generate app-ID, app-Secret and token and put these values in the inspector.
-
 Customize template and css.
