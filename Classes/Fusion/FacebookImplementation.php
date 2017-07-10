@@ -9,7 +9,7 @@ use Neos\Flow\Annotations as Flow;
 use Neos\Fusion\FusionObjects\AbstractFusionObject;
 
 class FacebookImplementation extends AbstractFusionObject {
-		public function evaluate() {
+	public function evaluate() {
 			
 			$appID = $this->tsValue('appID');
 			$appSecret = $this->tsValue('appSecret');
@@ -137,7 +137,5 @@ class FacebookImplementation extends AbstractFusionObject {
 			}
 				
 			return $feed;
-			
-			
 	}
 }
