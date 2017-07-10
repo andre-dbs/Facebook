@@ -19,4 +19,4 @@ Add Plugin "Facebook". Generate app-ID, app-Secret and token and put these value
 Customize template and css if needed.
 
 # Screenshots
-![Screenshot](/Documentation/screenshot.png?raw=true "Screenshot")
+![Screenshot](/Documentation/Screenshot.png?raw=true "Screenshot")
