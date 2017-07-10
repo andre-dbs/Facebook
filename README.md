@@ -10,9 +10,6 @@ Install via composer as a dev package
 php composer.phar require facebook/graph-sdk
 php composer.phar require "itoop/facebook" "dev-master"
 ```
-
-Add ```bash <link rel="stylesheet" href="{f:uri.resource(path: 'Styles/Facebook.css', package:'Itoop.Facebook')}" media="all" /> ``` to the stylesheets-section of your page template.
-
 # Usage
 Add Plugin "Facebook". Generate app-ID, app-Secret and token and put these values in the inspector.
 
