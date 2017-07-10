@@ -2,6 +2,7 @@
     "description": "",
     "type": "neos-package",
     "name": "itoop/facebook",
+    "license": "MIT",
     "require": {
         "neos/flow": "*",
         "facebook/graph-sdk": "*"
