@@ -1,5 +1,5 @@
 {
-    "description": "",
+    "description": "Nodetype to integrate a fully customized facebook postlist using the facebook graph-sdk",
     "type": "neos-package",
     "name": "itoop/facebook",
     "license": "MIT",
