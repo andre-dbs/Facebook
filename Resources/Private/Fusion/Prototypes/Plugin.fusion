@@ -1,0 +1,18 @@
+prototype(Itoop.Facebook:Posts) < prototype(Neos.Neos:Content) {
+		templatePath = 'resource://Itoop.Facebook/Private/Templates/Index.html'
+      posts = Itoop.Facebook:PostList
+      @cache {
+      	mode = 'uncached'
+      	context {
+				1 = 'node'
+      		2 = 'documentNode'
+      	}
+    }
+}
+
+prototype(Itoop.Facebook:PostList) {
+		@class = 'Itoop\\Facebook\\Fusion\\FacebookImplementation'
+		appID = ${q(node).property('appID')}
+      appSecret = ${q(node).property('appSecret')}
+		token = ${q(node).property('token')}
+}

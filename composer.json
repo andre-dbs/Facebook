@@ -1,0 +1,19 @@
+{
+    "description": "",
+    "type": "neos-package",
+    "name": "itoop/facebook",
+    "require": {
+        "neos/flow": "*",
+        "facebook/graph-sdk": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Itoop\\Facebook\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Itoop.Facebook"
+        }
+    }
+}

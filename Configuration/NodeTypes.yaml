@@ -1,0 +1,37 @@
+##
+# Facebook-Plugin
+#
+'Itoop.Facebook:Posts':
+  superTypes:
+    'Neos.Neos:Plugin': TRUE
+  ui:
+    label: 'Facebook'
+    group: 'plugins'
+    inspector:
+      groups:
+        settings:
+          label: 'Settings'
+  properties:
+    appID:
+      type: string
+      ui:
+        label: 'app ID'
+        reloadIfChanged: true
+        inspector:
+          group: 'settings'
+    appSecret:
+      type: string
+      ui:
+        ui:
+        label: 'app secret'
+        reloadIfChanged: true
+        inspector:
+          group: 'settings'
+    token:
+      type: string
+      ui:
+        ui:
+        label: 'token'
+        reloadIfChanged: true
+        inspector:
+          group: 'settings'

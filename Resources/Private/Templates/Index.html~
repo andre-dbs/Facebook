@@ -1,0 +1,15 @@
+{namespace neos=Neos\Neos\ViewHelpers}
+{namespace media=Neos\Media\ViewHelpers}
+
+<div id="facebook_plugin">
+	<f:for each="{posts}" as="post">
+		<ul>
+			<f:if condition="{post.error}"><li>{post.error}</li></f:if>
+			<f:if condition="{post.posttime}"><li class="posttime">{post.posttime}</li></f:if>
+			<f:if condition="{post.story}"><li class="story">{post.story}</li></f:if>				
+			<f:if condition="{post.full_picture}"><img src="{post.full_picture}" alt="image" class="facebook_image"></li></f:if>
+			<f:if condition="{post.message}"><li class="message">{post.message -> f:format.raw()}</li></f:if>
+		</ul>
+	</f:for>
+</div>
+
