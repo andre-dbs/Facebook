@@ -1,5 +1,5 @@
 # Itoop.Facebook
-Nodetype to integrate a fully customized facebook postlist using the facebook graph-sdk.
+Nodetype to integrate a fully customizable facebook postlist using the facebook graph-sdk.
 
 ## What it provides
 Easily adding a facebook postlist in Neos CMS. 
