@@ -5,6 +5,10 @@
 	overflow-x: hidden;
 }
 
+#facebook_plugin ul {
+	margin-left: 0;
+}
+
 #facebook_plugin li {
 	list-style-type: none;
 	width: 100%;
