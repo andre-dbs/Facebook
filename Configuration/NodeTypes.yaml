@@ -6,6 +6,7 @@
     'Neos.Neos:Content': TRUE
   ui:
     label: 'Facebook'
+    icon: 'icon-facebook-official'
     group: 'plugins'
     inspector:
       groups:
