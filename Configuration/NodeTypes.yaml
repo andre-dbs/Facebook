@@ -3,7 +3,7 @@
 #
 'Itoop.Facebook:Posts':
   superTypes:
-    'Neos.Neos:Plugin': TRUE
+    'Neos.Neos:Content': TRUE
   ui:
     label: 'Facebook'
     group: 'plugins'
