@@ -45,7 +45,7 @@ class FacebookImplementation extends AbstractFusionObject {
 			$array= json_decode($graphObject, true);
 			
 						
-			$feed = array();
+			//$feed = array();
 			foreach($array['posts'] as $post) {
 															
 				$posttime = false;
@@ -64,18 +64,18 @@ class FacebookImplementation extends AbstractFusionObject {
 				$daybeforeyesterday = date ('d.m.Y',$twodays );
 				$monthnames = array(
 					1=>"Januar",
-   				2=>"Februar",
-   				3=>"März",
-   				4=>"April",
-   				5=>"Mai",
-   				6=>"Juni",
-   				7=>"Juli",
-   				8=>"August",
-   				9=>"September",
-   				10=>"Oktober",
-   				11=>"November",
-   				12=>"Dezember"
-   			);
+   					2=>"Februar",
+   					3=>"März",
+   					4=>"April",
+   					5=>"Mai",
+   					6=>"Juni",
+   					7=>"Juli",
+   					8=>"August",
+   					9=>"September",
+   					10=>"Oktober",
+   					11=>"November",
+   					12=>"Dezember"
+   				);
 				if($pt == $today) {
 					$posttime = 'Heute';
 				} elseif ($pt == $yesterday) {
@@ -86,8 +86,8 @@ class FacebookImplementation extends AbstractFusionObject {
 					$posttimeday = date("d", strtotime($posttime));
 					$posttimemonth = date("n", strtotime($posttime));
 					$ptm = $monthnames[$posttimemonth];
-   				$posttime = $posttimeday.'. '.$ptm;
-   			}
+   					$posttime = $posttimeday.'. '.$ptm;
+   				}
 				
 				$story = false;
 				if($story === false && isset($post['story']) && !empty($post['story'])) {
@@ -102,15 +102,15 @@ class FacebookImplementation extends AbstractFusionObject {
 					// render url's in text - see https://css-tricks.com/snippets/php/find-urls-in-text-make-links/
 					// The Regular Expression filter
 					$reg_exUrl = "/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/";
-         		preg_match_all($reg_exUrl, $message, $matches);
-         		// set link for each url in text respectively message
-         		$usedPatterns = array();
-         		foreach($matches[0] as $pattern){
-	         		if(!array_key_exists($pattern, $usedPatterns)){
-               		$usedPatterns[$pattern]=true;
-                  	$message = str_replace($pattern, '<a href="'.$pattern.'" rel="nofollow" target="_blank">'.$pattern.'</a>', $message);
+         				preg_match_all($reg_exUrl, $message, $matches);
+         				// set link for each url in text respectively message
+         				$usedPatterns = array();
+         				foreach($matches[0] as $pattern){
+	         				if(!array_key_exists($pattern, $usedPatterns)){
+               					$usedPatterns[$pattern]=true;
+                  				$message = str_replace($pattern, '<a href="'.$pattern.'" rel="nofollow" target="_blank">'.$pattern.'</a>', $message);
 						}
-            	}
+            				}
 				}
 				
 					
