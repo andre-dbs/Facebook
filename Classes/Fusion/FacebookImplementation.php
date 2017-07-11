@@ -44,8 +44,6 @@ class FacebookImplementation extends AbstractFusionObject {
 			$graphObject = $response->getGraphObject();
 			$array= json_decode($graphObject, true);
 			
-						
-			//$feed = array();
 			foreach($array['posts'] as $post) {
 															
 				$posttime = false;
