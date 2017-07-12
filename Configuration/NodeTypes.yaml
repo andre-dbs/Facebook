@@ -23,7 +23,6 @@
     appSecret:
       type: string
       ui:
-        ui:
         label: 'app secret'
         reloadIfChanged: true
         inspector:
@@ -31,7 +30,6 @@
     token:
       type: string
       ui:
-        ui:
         label: 'token'
         reloadIfChanged: true
         inspector:
