@@ -8,7 +8,7 @@
 			<f:if condition="{post.error}"><li>{post.error}</li></f:if>
 			<f:if condition="{post.posttime}"><li class="posttime">{post.posttime}</li></f:if>
 			<f:if condition="{post.story}"><li class="story">{post.story}</li></f:if>				
-			<f:if condition="{post.full_picture}"><img src="{post.full_picture}" alt="image" class="facebook_image"></li></f:if>
+			<f:if condition="{post.full_picture}"><li><img src="{post.full_picture}" alt="image" class="facebook_image"></li></f:if>
 			<f:if condition="{post.message}"><li class="message">{post.message -> f:format.raw()}</li></f:if>
 		
 		</f:for>
