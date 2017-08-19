@@ -15,4 +15,5 @@ prototype(Itoop.Facebook:PostList) {
 	appID = ${q(node).property('appID')}
       	appSecret = ${q(node).property('appSecret')}
 	token = ${q(node).property('token')}
+	fburl = ${q(node).property('fburl')}
 }
