@@ -14,11 +14,14 @@ class FacebookImplementation extends AbstractFusionObject {
 			$appID = $this->tsValue('appID');
 			$appSecret = $this->tsValue('appSecret');
 			$token = $this->tsValue('token');
+			$fburl = $this->tsValue('fburl');
+			
+			$url = '/'.$fburl.'?fields=posts.limit(10){created_time,backdated_time,full_picture,picture,message,story}&locale=de_DE';
 			
 			// placeholder with advice for missing credentials
-			if(empty($appID) || empty($appSecret) || empty($token)) {
+			if(empty($fburl) || empty($appID) || empty($appSecret) || empty($token)) {
 				$feed[] = array(
-					'error' => 'Please fill in data (appID, app secret and token) first!',						
+					'error' => 'Please fill in data (appID, app secret, token and facebook url).',						
 				);
 				return $feed;	
 			}			
@@ -31,7 +34,7 @@ class FacebookImplementation extends AbstractFusionObject {
 				
 			try {
 				// Returns a `Facebook\FacebookResponse` object
-				$response = $fb->get('/alstaettertc?fields=id,name,posts', $token);
+				$response = $fb->get($url, $token);
 			} catch(Facebook\Exceptions\FacebookResponseException $e) {
     			echo 'Graph returned an error: ' . $e->getMessage();
     			exit;
@@ -40,7 +43,7 @@ class FacebookImplementation extends AbstractFusionObject {
     			exit;
 			}
 				
-			$response = $fb->get('/alstaettertc?fields=posts.limit(10){created_time,backdated_time,full_picture,picture,message,story}&locale=de_DE', $token);
+			$response = $fb->get($url, $token);
 			$graphObject = $response->getGraphObject();
 			$array= json_decode($graphObject, true);
 			
