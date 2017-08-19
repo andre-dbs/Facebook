@@ -34,3 +34,10 @@
         reloadIfChanged: true
         inspector:
           group: 'settings'
+    fburl:
+      type: string
+      ui:
+        label: 'facebook url'
+        reloadIfChanged: true
+        inspector:
+          group: 'settings'
