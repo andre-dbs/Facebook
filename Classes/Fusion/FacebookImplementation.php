@@ -11,10 +11,10 @@ use Neos\Fusion\FusionObjects\AbstractFusionObject;
 class FacebookImplementation extends AbstractFusionObject {
 	public function evaluate() {
 			
-			$appID = $this->tsValue('appID');
-			$appSecret = $this->tsValue('appSecret');
-			$token = $this->tsValue('token');
-			$fburl = $this->tsValue('fburl');
+			$appID = $this->fusionValue('appID');
+			$appSecret = $this->fusionValue('appSecret');
+			$token = $this->fusionValue('token');
+			$fburl = $this->fusionValue('fburl');
 			
 			$url = '/'.$fburl.'?fields=posts.limit(10){created_time,backdated_time,full_picture,picture,message,story}&locale=de_DE';
 			
