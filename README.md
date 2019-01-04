@@ -8,7 +8,7 @@ Easily adding a facebook postlist in Neos CMS.
 Install via composer as a dev package
 ```bash
 php composer.phar require facebook/graph-sdk
-php composer.phar require "itoop/facebook" "0.0.1"
+php composer.phar require "itoop/facebook" "0.1.3"
 ```
 # Usage
 Add Plugin "Facebook". Generate app-ID, app-Secret and token and put these values into the inspector.
